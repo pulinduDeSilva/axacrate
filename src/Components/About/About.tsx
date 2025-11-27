@@ -19,6 +19,13 @@ function Features() {
     const textSplit = new SplitText("#aboutText", { type: "words, chars" });
     const chars = textSplit.chars;
 
+
+
+    if (!containerRef.current) return;
+
+    const sections = gsap.utils.toArray(`.${styles.features} > div`);
+    const mm = gsap.matchMedia();
+
     gsap.fromTo(
       chars,
       { opacity: 0, yPercent: 130 },
@@ -31,7 +38,7 @@ function Features() {
         scrollTrigger: {
           trigger: "#about-section",
           start: "top top",
-          end: "+=700",
+          end: "+=900",
           scrub: 1.5,
           pin: true,
         }
@@ -39,10 +46,6 @@ function Features() {
     );
 
 
-    if (!containerRef.current) return;
-
-    const sections = gsap.utils.toArray(`.${styles.features} > div`);
-    const mm = gsap.matchMedia();
     mm.add("(min-width: 1400px)", () => { //Desktop
       gsap.to(sections, {
         xPercent: -100 * (sections.length - 1),
@@ -58,6 +61,7 @@ function Features() {
     })
 
     mm.add("(max-width: 1399px)", () => { //mobile
+
       const cards = gsap.utils.toArray(`.${styles["feature-card"]}`) as HTMLElement[];
 
       cards.forEach((card) => {
@@ -100,7 +104,7 @@ function Features() {
 
       <div id="Features" className={styles["wrapper"]} ref={containerRef}>
         <div className={styles["features"]}>
-          
+
           <div className={styles["feature-card"]}>
             <div className={styles["card"]}>
               <img src={featureOne} alt="rfid Tracking" />
