@@ -17,7 +17,6 @@ function Features() {
           end: "+=500",
           pin: true,
           scrub: true,
-          markers: true
         }
       })
 
