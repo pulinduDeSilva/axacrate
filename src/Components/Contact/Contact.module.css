@@ -1,7 +1,10 @@
 section {
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .bg {

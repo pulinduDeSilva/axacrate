@@ -2,7 +2,7 @@
 .team-section {
   width: 100%;
   height: fit-content;
-  min-height: 100vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,15 +16,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 65%;
   height: fit-content;
   margin-bottom: 300px;
 }
 
 .team-section h2 {
-  font-size: 2rem;
-  margin-bottom: 5rem;
-  color: #fff;
+  font-size: 3rem;
+  color: #ffffff;
+  margin: 2rem 0 8rem 0;
+}
+
+.team-section p {
+  
 }
 
 /* Grid container */
@@ -41,7 +45,7 @@
   height: auto;
   margin: auto;
   text-align: center;
-  background-color: rgba(240, 248, 255, 0.295);
+  background-color: #000000;
   overflow: hidden;
   margin: 20px;
 }
@@ -66,7 +70,7 @@
 
 @media (max-width: 1024px) {
   .team-section h2 {
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 
   
@@ -80,13 +84,8 @@
   }
 
   .team-section h2 {
-    font-size: 1.6rem;
+    font-size: 2.3rem;
   }
-
-
-
- 
-
 
   .card h3 {
     font-size: 1rem;
@@ -95,11 +94,7 @@
 
 /* Mobile */
 @media (max-width: 480px) {
-  
 
-  .card img {
-    max-height: 140px;
-  }
 
   .card h1 {
     font-size: 2rem;
@@ -111,9 +106,6 @@
 }
 
 @media (max-width: 375px) {
-  .team {
-    gap: 1rem;
-  }
 
 
 }

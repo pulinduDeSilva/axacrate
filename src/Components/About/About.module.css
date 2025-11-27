@@ -11,7 +11,7 @@
 
 .about-section h1 {
   /*font-size: clamp(1.5625rem, 1.085rem + 2.2208vw, 3.75rem);*/
-  font-size: 60px;
+  font-size: 80px;
   margin: 0 20px;
   word-wrap: break-word;
   color: antiquewhite;
@@ -26,15 +26,14 @@
 
 .bg {
   position: absolute;
-  top: 0;
+  width: 100%;     /* never exceed viewport */
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
+  top: 0;
   object-fit: cover;
-  opacity: 0;
-  filter: blur(10px);
+  pointer-events: none;
+  overflow: hidden;
 }
+
 
 .features {
   display: flex;
@@ -100,14 +99,6 @@
   object-fit: cover;
 }
 
-.glass {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
 
 
 @media (max-width: 1400px) {
@@ -141,7 +132,7 @@
   }
 
   .text-wrapper {
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
   }
 
   .feature-card img {
@@ -149,6 +140,7 @@
   }
 
   .card {
+    flex-direction: column;
     width: 70%;
   }
 

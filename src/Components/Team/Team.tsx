@@ -14,9 +14,10 @@ function Features() {
         scrollTrigger: {
           trigger: "." + styles["team-section"],
           start: "top 50%",
-          end: "bottom 100%",
+          end: "+=500",
           pin: true,
           scrub: true,
+          markers: true
         }
       })
 
