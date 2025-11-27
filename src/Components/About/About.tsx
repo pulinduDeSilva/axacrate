@@ -17,7 +17,7 @@ function Features() {
 
   useGSAP(() => {
 
-    const textSplit = new SplitText("#aboutText", { type: "chars" });
+    const textSplit = new SplitText("#aboutText", { type: "words, chars" });
     const chars = textSplit.chars;
 
     gsap.fromTo(
@@ -46,7 +46,7 @@ function Features() {
     const mm = gsap.matchMedia();
     mm.add("(min-width: 1400px)", () => { //Desktop
       gsap.to(sections, {
-        xPercent: -90 * (sections.length - 1),
+        xPercent: -100 * (sections.length - 1),
         ease: "none",
         scrollTrigger: {
           trigger: containerRef.current,
