@@ -7,59 +7,102 @@ import featureBg from "../../assets/featureBg.png";
 import geofence from "../../assets/geofencing.png";
 import rfidHealth from "../../assets/rfidHealth.png";
 import cloud from "../../assets/cloud.png";
-
-
+import { SplitText } from "gsap/SplitText";
 
 
 function Features() {
+  gsap.registerPlugin(SplitText);
+
   const containerRef = useRef<HTMLDivElement>(null);
-
-
 
   useGSAP(() => {
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "." + styles["about-section"],
-        start: "top 70%",    // start earlier
-        end: "bottom 65%",      // end at middle of viewport
-        scrub: true
+    const textSplit = new SplitText("#aboutText", { type: "chars" });
+    const chars = textSplit.chars;
+
+    gsap.fromTo(
+      chars,
+      { opacity: 0, yPercent: 130 },
+      {
+        opacity: 1,
+        yPercent: 0,
+        duration: 1,
+        ease: "back.out",
+        stagger: 0.15,
+        scrollTrigger: {
+          trigger: "#about-section",
+          start: "top top",
+          end: "+=700",
+          scrub: 1.5,
+          pin: true,
+        }
       }
-    });
+    );
 
-
-    // Actual animation
-    tl.fromTo("." + styles["about-section"], { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 1, ease: "power1.inout" });
 
     if (!containerRef.current) return;
 
     const sections = gsap.utils.toArray(`.${styles.features} > div`);
+    const mm = gsap.matchMedia();
+    mm.add("(min-width: 1400px)", () => { //Desktop
+      gsap.to(sections, {
+        xPercent: -90 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          pin: true,
+          scrub: 1,
+          end: "+=4000",
+        },
+      })
 
-    gsap.to(sections, {
-      xPercent: -120 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: containerRef.current,
-        pin: true,
-        scrub: 1,
-        end: "+=3300",
-      },
     })
+
+    mm.add("(max-width: 1399px)", () => { //mobile
+      const cards = gsap.utils.toArray(`.${styles["feature-card"]}`) as HTMLElement[];
+
+      cards.forEach((card) => {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: card,
+            start: "top 70%",    // start earlier
+            end: "bottom 65%",      // end at middle of viewport
+            scrub: true
+          }
+        });
+
+
+        // Actual animation
+        tl.fromTo(card, { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 1, ease: "power1.inout" });
+      });
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "." + styles["about-section"],
+          start: "top 70%",    // start earlier
+          end: "bottom 65%",      // end at middle of viewport
+          scrub: true
+        }
+      });
+
+      // Actual animation
+      tl.fromTo("." + styles["about-section"], { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 1, ease: "power1.inout" });
+
+    });
 
   }, []);
 
 
-
   return (
     <>
-      <section id="about" className={styles["about-section"]}>
-        <h1>Transform your warehouse</h1>
+      <section id="about-section" className={styles["about-section"]}>
+        <h1 id="aboutText">Transform your warehouse</h1>
       </section>
 
-      <div className={styles["wrapper"]} ref={containerRef}>
+      <div id="Features" className={styles["wrapper"]} ref={containerRef}>
         <img className={styles["bg"]} src={featureBg} alt="" />
         <div className={styles["features"]}>
-
+          
           <div className={styles["feature-card"]}>
             <div className={styles["card"]}>
               <img src={featureOne} alt="rfid Tracking" />

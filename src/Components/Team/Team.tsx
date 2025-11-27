@@ -9,13 +9,14 @@ function Features() {
 
 
     const mm = gsap.matchMedia();
-    mm.add("(min-width: 769px)" , () => { //mobile
+    mm.add("(min-width: 769px)", () => { //desktop
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "." + styles["team-section"],
           start: "top 50%",
-          end: "bottom 90%",
-          scrub: true
+          end: "bottom 100%",
+          pin: true,
+          scrub: true,
         }
       })
 
@@ -26,10 +27,10 @@ function Features() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "." + styles["team-section"],
-          start: "top 20%",
-          end: "bottom 80%",
+          start: "top 30%",
+          end: "+=300",
           pin: true,
-          scrub: true
+          scrub: true,
         }
       })
 
@@ -43,30 +44,61 @@ function Features() {
       <div className={styles["wrapper-team"]}>
         <h2>Developers</h2>
         <div className={styles["team"]}>
+
           <div className={styles["card"]}>
-            <img src={profile} alt="rfid Tracking" />
-            <h3>Full Name</h3>
+            <img src={profile} alt="John"/>
+              <h1>John Doe</h1>
+              <p className={styles["profile"]}>CEO & Founder, Example</p>
+              <p>Harvard University</p>
+              
+              <p><button>Contact</button></p>
           </div>
+
           <div className={styles["card"]}>
-            <img src={profile} alt="rfid Tracking" />
-            <h3>Full Name</h3>
+            <img src={profile} alt="John"/>
+              <h1>John Doe</h1>
+              <p className={styles["profile"]}>CEO & Founder, Example</p>
+              <p>Harvard University</p>
+              
+              <p><button>Contact</button></p>
           </div>
+
           <div className={styles["card"]}>
-            <img src={profile} alt="rfid Tracking" />
-            <h3>Full Name</h3>
+            <img src={profile} alt="John"/>
+              <h1>John Doe</h1>
+              <p className={styles["profile"]}>CEO & Founder, Example</p>
+              <p>Harvard University</p>
+              
+              <p><button>Contact</button></p>
           </div>
+
           <div className={styles["card"]}>
-            <img src={profile} alt="rfid Tracking" />
-            <h3>Full Name</h3>
+            <img src={profile} alt="John"/>
+              <h1>John Doe</h1>
+              <p className={styles["profile"]}>CEO & Founder, Example</p>
+              <p>Harvard University</p>
+              
+              <p><button>Contact</button></p>
           </div>
+
           <div className={styles["card"]}>
-            <img src={profile} alt="rfid Tracking" />
-            <h3>Full Name</h3>
+            <img src={profile} alt="John"/>
+              <h1>John Doe</h1>
+              <p className={styles["profile"]}>CEO & Founder, Example</p>
+              <p>Harvard University</p>
+              
+              <p><button>Contact</button></p>
           </div>
+
           <div className={styles["card"]}>
-            <img src={profile} alt="rfid Tracking" />
-            <h3>Full Name</h3>
+            <img src={profile} alt="John"/>
+              <h1>John Doe</h1>
+              <p className={styles["profile"]}>CEO & Founder, Example</p>
+              <p>Harvard University</p>
+              
+              <p><button>Contact</button></p>
           </div>
+
         </div>
       </div>
 

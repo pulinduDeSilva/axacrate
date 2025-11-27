@@ -30,7 +30,6 @@ function Header() {
         </div>
 
         <nav>
-          <a href="#about">About us</a>
           <a href="#Features">Features</a>
           <a href="#contact">Contact</a>
         </nav>
