@@ -8,7 +8,6 @@
   justify-content: center;
   text-align: center;
   background-color: #000000;
-  overflow: hidden;
 }
 
 .wrapper-team {
@@ -19,6 +18,7 @@
   width: 65%;
   height: fit-content;
   margin-bottom: 300px;
+
 }
 
 .team-section h2 {

@@ -27,9 +27,8 @@ function Features() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "." + styles["team-section"],
-          start: "top 30%",
-          end: "+=300",
-          pin: true,
+          start: "top 40%",
+          end: "+=500",
           scrub: true,
         }
       })
