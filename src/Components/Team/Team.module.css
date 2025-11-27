@@ -95,15 +95,43 @@
 
 
   .card h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .wrapper-team {
+    width: 80%;
   }
 
   .team-section {
     height: fit-content;
   }
+
+  .card {
+    width: 130px;
+  }
+
+
 }
 
 @media (max-width: 375px) {
 
+  .wrapper-team {
+    width: 80%;
+  }
 
+  .card {
+    width: 110px;
+  }
+
+  .card h1 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
 }
