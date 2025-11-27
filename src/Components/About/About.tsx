@@ -3,7 +3,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useEffect, useRef } from "react";
 import featureOne from "../../assets/rfidtrack.png";
-import featureBg from "../../assets/featureBg.png";
 import geofence from "../../assets/geofencing.png";
 import rfidHealth from "../../assets/rfidHealth.png";
 import cloud from "../../assets/cloud.png";
@@ -100,7 +99,6 @@ function Features() {
       </section>
 
       <div id="Features" className={styles["wrapper"]} ref={containerRef}>
-        <img className={styles["bg"]} src={featureBg} alt="" />
         <div className={styles["features"]}>
           
           <div className={styles["feature-card"]}>

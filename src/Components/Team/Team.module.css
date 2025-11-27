@@ -16,81 +16,48 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 70%;
   height: fit-content;
-  margin: 0 0 20px 0;
+  margin-bottom: 300px;
 }
 
 .team-section h2 {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   color: #fff;
 }
 
 /* Grid container */
 .team {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 /* Cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  width: 280px;
+  height: auto;
   margin: auto;
   text-align: center;
-  background-color: aliceblue;
+  background-color: rgba(240, 248, 255, 0.295);
+  overflow: hidden;
+  margin: 20px;
 }
 
 .card img {
   width: 100%;
+  height: auto;
 }
 
-.card h1 {
-  color: #292828;
-}
-
-.card p {
-  color: #292929;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
-button:hover,
-a:hover {
-  opacity: 0.7;
+.card-content {
+  padding: 16px;
 }
 
 /* Tablet */
 
 @media (max-width: 1400px) {
-  .team {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1000px;
-  }
 
   .wrapper-team {
     margin: 100px 0;
@@ -102,20 +69,8 @@ a:hover {
     font-size: 1.8rem;
   }
 
-  .team {
-    grid-template-columns: repeat(3, 1fr);
-    width: 80%;
+  
 
-  }
-
-  .card {
-    width: 200px;
-    max-width: 100%;
-  }
-
-  .card img {
-    max-height: 200px;
-  }
 }
 
 /* Small tablets / large phones */
@@ -130,19 +85,8 @@ a:hover {
 
 
 
-  .team {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
+ 
 
-  .card {
-    width: 200px;
-    max-width: 100%;
-  }
-
-  .card img {
-    max-height: 200px;
-  }
 
   .card h3 {
     font-size: 1rem;
@@ -151,18 +95,7 @@ a:hover {
 
 /* Mobile */
 @media (max-width: 480px) {
-  .team {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-
-
-  .card {
-    width: 150px;
-    max-width: 100%;
-    border-radius: 5px;
-  }
+  
 
   .card img {
     max-height: 140px;

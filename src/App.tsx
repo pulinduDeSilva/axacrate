@@ -15,21 +15,21 @@ function App() {
 
   return (
     <div className="wrapper">
-      <div className="head-pos"><Header/></div>
+      <div className="head-pos"><Header /></div>
       <div>
-        <Home/>
+        <Home />
       </div>
+        <div >
+          <About />
+        </div>
 
-      <div className="section">
-        <About/>
-      </div>
+        <div >
+          <Team />
+        </div>
+        <div >
+          <Contact />
+        </div>
 
-      <div className="section">
-        <Team/>
-      </div>
-      <div className="section">
-        <Contact/>
-      </div>
     </div>
   );
 }

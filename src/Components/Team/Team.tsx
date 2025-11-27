@@ -42,61 +42,57 @@ function Features() {
   return (
     <section id="team" className={styles["team-section"]}>
       <div className={styles["wrapper-team"]}>
-        <h2>Developers</h2>
+        <h2>Team Behind Development</h2>
+
+
         <div className={styles["team"]}>
 
           <div className={styles["card"]}>
-            <img src={profile} alt="John"/>
+            <img src={profile} alt="John" />
+            <div className="card-content">
               <h1>John Doe</h1>
               <p className={styles["profile"]}>CEO & Founder, Example</p>
-              <p>Harvard University</p>
-              
-              <p><button>Contact</button></p>
+            </div>
           </div>
 
           <div className={styles["card"]}>
-            <img src={profile} alt="John"/>
+            <img src={profile} alt="John" />
+            <div className="card-content">
               <h1>John Doe</h1>
               <p className={styles["profile"]}>CEO & Founder, Example</p>
-              <p>Harvard University</p>
-              
-              <p><button>Contact</button></p>
+            </div>
           </div>
 
           <div className={styles["card"]}>
-            <img src={profile} alt="John"/>
+            <img src={profile} alt="John" />
+            <div className="card-content">
               <h1>John Doe</h1>
               <p className={styles["profile"]}>CEO & Founder, Example</p>
-              <p>Harvard University</p>
-              
-              <p><button>Contact</button></p>
+            </div>
           </div>
 
           <div className={styles["card"]}>
-            <img src={profile} alt="John"/>
+            <img src={profile} alt="John" />
+            <div className="card-content">
               <h1>John Doe</h1>
               <p className={styles["profile"]}>CEO & Founder, Example</p>
-              <p>Harvard University</p>
-              
-              <p><button>Contact</button></p>
+            </div>
           </div>
 
           <div className={styles["card"]}>
-            <img src={profile} alt="John"/>
+            <img src={profile} alt="John" />
+            <div className="card-content">
               <h1>John Doe</h1>
               <p className={styles["profile"]}>CEO & Founder, Example</p>
-              <p>Harvard University</p>
-              
-              <p><button>Contact</button></p>
+            </div>
           </div>
 
           <div className={styles["card"]}>
-            <img src={profile} alt="John"/>
+            <img src={profile} alt="John" />
+            <div className="card-content">
               <h1>John Doe</h1>
               <p className={styles["profile"]}>CEO & Founder, Example</p>
-              <p>Harvard University</p>
-              
-              <p><button>Contact</button></p>
+            </div>
           </div>
 
         </div>
