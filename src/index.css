@@ -1,0 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  color: #e8e8ea;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}

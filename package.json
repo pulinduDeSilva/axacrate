@@ -1,0 +1,32 @@
+{
+  "homepage": "https://pulinduDeSilva.github.io/axacrate",
+  "name": "axacrate",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "bootstrap": "^5.3.8",
+    "gsap": "^3.13.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^18.2.0",
+    "react-responsive": "^10.0.1",
+    "start": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "gh-pages": "^6.3.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  }
+}

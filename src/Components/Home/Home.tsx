@@ -1,0 +1,64 @@
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { useEffect } from "react";
+import "../Home/Home.css";
+
+
+function Home() {
+
+  const scrollToAbout = (id: string) => {
+    const selection = document.getElementById(id)
+    if (selection) {
+      selection.scrollIntoView(
+        { behavior: "smooth" }
+      );
+    }
+  }
+
+
+  useGSAP(() => {
+    const loadAnimation = gsap.timeline({ defaults: { ease: "power1.inout" } });
+
+    loadAnimation.fromTo(".hero", { opacity: 0, y: 100, duration: 1 }, { opacity: 1, y: 0, duration: 1 });
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#fluid",
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+
+    // no from(), just animate to the final state
+    tl.fromTo(".hero", { scale: 1, opacity: 1 }, { scale: 0.8, opacity: 0, duration: 1, ease: "power1.inout" });
+
+    
+
+
+  }, []);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "cursor.js"; // since it's in public/
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+  return (
+    <>
+      <section className="home-container">
+        <canvas id="fluid" className="bg-cursor"></canvas>
+        <div className="hero">
+          <h1 id="top-hometext">AXACRATE</h1>
+          <h2 className="home-des">Track Trace Trust</h2>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default Home;

@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+div {
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.head-pos {
+    position: absolute;
+    z-index: 100;
+}
+

@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.home-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -99;
+}
+
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.1) translateY(-90px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rfid-loop {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  scale: 1;
+  z-index: 10;
+}
+
+
+#top-hometext {
+  font-size: clamp(3.125rem, 1.1529rem + 7.4142vw, 11.25rem);
+  font-family: "Audiowide", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #d1d0cd;
+  opacity: 1;
+  margin: 0;
+  line-height: 1;
+  z-index: -2;
+}
+
+
+.home-des {
+  font-size: clamp(1.5625rem, 1.25rem + 1.0417vw, 2.5rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 480px) {
+  
+}
