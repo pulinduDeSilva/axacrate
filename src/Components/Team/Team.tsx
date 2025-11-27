@@ -6,18 +6,36 @@ import profile from "../../assets/prof.jpg";
 function Features() {
 
   useGSAP(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "." + styles["team-section"],
-        start: "top 70%",
-        end: "bottom 10%",
-        scrub: true,
-        pin: true
 
-      }
+
+    const mm = gsap.matchMedia();
+    mm.add("(min-width: 769px)" , () => { //mobile
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "." + styles["team-section"],
+          start: "top 50%",
+          end: "bottom 90%",
+          scrub: true
+        }
+      })
+
+      tl.fromTo("." + styles["wrapper-team"], { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "power1.inout" });
     })
 
-    tl.fromTo("." + styles["wrapper-team"], { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "power1.inout" });
+    mm.add("(max-width: 768px)", () => { //mobile
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "." + styles["team-section"],
+          start: "top 20%",
+          end: "bottom 80%",
+          pin: true,
+          scrub: true
+        }
+      })
+
+      tl.fromTo("." + styles["wrapper-team"], { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "power1.inout" });
+    })
+
   }, [])
 
   return (

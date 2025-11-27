@@ -36,17 +36,19 @@ function Features() {
     const sections = gsap.utils.toArray(`.${styles.features} > div`);
 
     gsap.to(sections, {
-      xPercent: -105 * (sections.length - 1),
+      xPercent: -120 * (sections.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: containerRef.current,
         pin: true,
         scrub: 1,
-        end: "+=2000",
+        end: "+=3300",
       },
     })
 
   }, []);
+
+
 
   return (
     <>
