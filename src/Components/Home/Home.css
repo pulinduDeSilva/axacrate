@@ -94,7 +94,7 @@ body {
   font-size: clamp(1.5625rem, 1.25rem + 1.0417vw, 2.5rem);
   font-family: "Poppins", sans-serif;
   font-weight: normal;
-  color: #ffffff;
+  color: #b1b1b1;
   text-align: center;
   margin: 0;
 }
