@@ -22,6 +22,7 @@ header {
   align-items: center;
 }
 
+
 .logo-img {
   margin-right: 10px;
 }
@@ -36,7 +37,7 @@ header {
 /* Navigation links */
 nav a {
   margin-left: 2rem;
-  color: #bfbfc5;
+  color: #ffffff;
   text-decoration: none;
   font-size: 0.95rem;
   transition: color 0.3s ease;

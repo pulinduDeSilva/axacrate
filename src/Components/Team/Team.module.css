@@ -1,7 +1,7 @@
 /* Team Section */
 .team-section {
   width: 100%;
-  height: fit-content;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,16 +15,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 65%;
+  width: 80%;
   height: fit-content;
-  margin-bottom: 300px;
 
 }
 
 .team-section h2 {
   font-size: 3rem;
   color: #ffffff;
-  margin: 2rem 0 8rem 0;
+  margin: 2rem 0 6rem 0;
 }
 
 /* Grid container */
@@ -37,13 +36,30 @@
 /* Cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 280px;
+  width: 200px;
   height: auto;
   margin: auto;
   text-align: center;
-  background-color: #000000;
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   overflow: hidden;
+  backdrop-filter: blur(10px);
   margin: 20px;
+  border-radius: 8px;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  color: #181717;
+}
+
+.card p {
+  font-size: 0.8rem;
+  color: #2e2d2d;
+  margin: 0.5rem 0 1rem 0;
+
+
 }
 
 .card img {
@@ -57,22 +73,52 @@
 
 /* Tablet */
 
-@media (max-width: 1400px) {
+@media (max-width: 1800px) {
 
   .wrapper-team {
-    margin: 100px 0;
+    width: 90%;
+    margin: 120px 0;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1600px) {
+
+  .wrapper-team {
+    width: 60%;
+    margin: 100px 0;
+  }
+  .card {
+    width: 150px;
+  }
+
+  .card h1 {
+    font-size: 1.5rem;
+  }
+  .card p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1200px) {
   .team-section h2 {
     font-size: 3rem;
   }
 
-  .card {
-    width: 200px;
+  .wrapper-team {
+    width: 80%;
+    margin: 100px 0;
   }
 
+  .card {
+    width: 150px;
+  }
+
+  .card h1 {
+    font-size: 1.5rem;
+  }
+  .card p {
+    font-size: 0.8rem;
+  }
 }
 
 /* Small tablets / large phones */
@@ -85,8 +131,15 @@
     font-size: 2.3rem;
   }
 
-  .card h3 {
-    font-size: 1rem;
+  .wrapper-team {
+    width: 80%;
+  }
+
+  .card h1 {
+    font-size: 1.5rem;
+  }
+  .card {
+    width: 130px;
   }
 }
 
@@ -95,11 +148,11 @@
 
 
   .card h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .card p {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .wrapper-team {
@@ -111,7 +164,7 @@
   }
 
   .card {
-    width: 130px;
+    width: 100px;
   }
 
 
@@ -120,7 +173,7 @@
 @media (max-width: 375px) {
 
   .wrapper-team {
-    width: 80%;
+    width: 90%;
   }
 
   .card {

@@ -22,9 +22,8 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: -99;
-
+  background-color: black;
 }
-
 
 
 @keyframes animate {
@@ -85,9 +84,15 @@ body {
   to {
     background-position: 200%;
   }
-  
+
 }
 
+.hero p {
+  font-size: clamp(0.75rem, 0.5727rem + 0.8249vw, 1.5625rem);
+  width: 50%;
+  text-align: center;
+  margin: 2.5rem 0 0 0;
+}
 
 
 .home-des {
@@ -101,6 +106,12 @@ body {
 
 
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .hero p {
+    width: 80%;
+    text-align: center;
+    margin: 2.5rem 0 0 0;
+  }
+}
 
 @media (max-width: 480px) {}

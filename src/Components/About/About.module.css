@@ -1,13 +1,12 @@
 .about-section {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: transparent;
+  background-color: #0f0e0e00;
 }
-
 
 .about-section h1 {
   /*font-size: clamp(1.5625rem, 1.085rem + 2.2208vw, 3.75rem);*/
@@ -57,12 +56,11 @@
   display: flex;
   width: 90%;
   padding: 0;
-  border-radius: 10px;
+  border-radius: 5px;
   /*background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));*/
-  background-color: rgb(175, 175, 175);
+  background-color: rgb(221, 221, 221);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
   box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.37);
   will-change: scale;
   transition: scale 0.1s linear;

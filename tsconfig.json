@@ -16,6 +16,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "public/cursor.js"],
+  "include": ["src", "src/assets/cursor.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

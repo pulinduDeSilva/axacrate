@@ -11,7 +11,7 @@ function Home() {
     const loadAnimation = gsap.timeline({ defaults: { ease: "power1.inout" } });
 
     loadAnimation.fromTo(".hero", { opacity: 0, y: 100, duration: 1 }, { opacity: 1, y: 0, duration: 1 });
-    
+
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -22,29 +22,23 @@ function Home() {
       }
     });
 
-    // no from(), just animate to the final state
     tl.fromTo(".hero", { scale: 1, opacity: 1 }, { scale: 0.8, opacity: 0, duration: 1, ease: "power1.inout" });
-    
-    
+
   }, []);
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "cursor.js"; // since it's in public/
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
+    // @ts-ignore
+    import('../../assets/cursor.js').then(() => {
+      console.log('Cursor script loaded');
+    });
   }, []);
+
   return (
     <>
       <section className="home-container">
-        <canvas id="fluid" className="bg-cursor"></canvas>
         <div className="hero">
           <h1 id="top-hometext">AXACRATE</h1>
-          <h2 className="home-des">Track Trace Trust</h2>
+          <p>Track pallets, detect unauthorized movement, and monitor warehouse zones instantly using RFID automation</p>
         </div>
       </section>
     </>

@@ -37,10 +37,9 @@ function Features() {
         stagger: 0.15,
         scrollTrigger: {
           trigger: "#about-section",
-          start: "top top",
-          end: "+=900",
+          start: "top 70%",
+          end: "bottom 80%",
           scrub: 1.5,
-          pin: true,
         }
       }
     );
@@ -54,7 +53,7 @@ function Features() {
           trigger: containerRef.current,
           pin: true,
           scrub: 1,
-          end: "+=4000",
+          end: "+=3000",
         },
       })
 

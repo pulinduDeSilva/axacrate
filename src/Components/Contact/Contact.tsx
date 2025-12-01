@@ -40,7 +40,7 @@ const ContactUs: React.FC = () => {
 
     return (
         <>
-            <section>
+            <section className= {styles["contact-section"]}>
                 <img className={styles["bg"]} src={featureBg} alt="Contact us BG" />
                 <div className={styles.contactContainer}>
                     <h2>Contact Us</h2>

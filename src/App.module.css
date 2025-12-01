@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+div {
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.head-pos {
+    position: absolute;
+    z-index: 100;
+}
+
+
+.bg-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -99;
+    background-image: linear-gradient(to right top, #0000009f, #08070788, #100e0d94, #14131281, #171816a1);
+    filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+@media(max-width: 1024px) {
+    .bg-cursor {
+        display: none;
+    }
+}
