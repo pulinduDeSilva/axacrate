@@ -38,7 +38,7 @@ function Home() {
       <section className="home-container">
         <div className="hero">
           <h1 id="top-hometext">AXACRATE</h1>
-          <p>Track pallets, detect unauthorized movement, and monitor warehouse zones instantly using RFID automation</p>
+          <p>Track Inventory, detect unauthorized movement, and monitor warehouse zones instantly using RFID automation</p>
         </div>
       </section>
     </>

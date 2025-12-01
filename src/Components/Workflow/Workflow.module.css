@@ -1,0 +1,43 @@
+.wrapper {
+    position: relative;
+    height: 100%;
+    perspective: 500px;
+    background-color: black;
+}
+
+.hero h1 {
+    font-size: 300px;
+    margin: 0;
+}
+
+
+.hero p {
+    font-size: 100px;
+    margin: 0;
+}
+
+.content-scroll1 {
+    height: 100vh;
+    background-color: rgb(39, 39, 39);
+}
+
+.content-scroll2 {
+    height: 100vh;
+
+    background-color: rgb(65, 67, 68);
+
+}
+
+.content-scroll3 {
+    height: 100vh;
+
+    background-color: rgb(31, 32, 32);
+}
+
+.content {
+    overflow: hidden;
+}
+
+.hero {
+    
+}

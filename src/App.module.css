@@ -4,31 +4,32 @@ body {
 
 }
 
-div {
-    padding: 0;
+#smooth-wrapper {
+  overflow: hidden;
+  position: relative;
 }
 
-.wrapper {
-    position: relative;
+#smooth-content {
+  min-height: 100vh;
+  position: relative;
+}
+
+.bg-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .head-pos {
-    position: absolute;
-    z-index: 100;
+  position: absolute;
+  z-index: 10;
 }
 
-
-.bg-cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -99;
-    background-image: linear-gradient(to right top, #0000009f, #08070788, #100e0d94, #14131281, #171816a1);
-    filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-}
 
 @media(max-width: 1024px) {
     .bg-cursor {
