@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Team Section */
 .team-section {
   width: 100%;
@@ -16,7 +20,7 @@
   align-items: center;
   justify-content: center;
   width: 80%;
-  height: fit-content;
+  height: 100vh;
 
 }
 
@@ -40,7 +44,7 @@
   height: auto;
   margin: auto;
   text-align: center;
-  background: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   overflow: hidden;
@@ -51,12 +55,12 @@
 
 .card h1 {
   font-size: 1.5rem;
-  color: #181717;
+  color: #fcfcfc;
 }
 
 .card p {
   font-size: 0.8rem;
-  color: #2e2d2d;
+  color: #cecece;
   margin: 0.5rem 0 1rem 0;
 
 
@@ -132,7 +136,7 @@
   }
 
   .wrapper-team {
-    width: 80%;
+    width: 90%;
   }
 
   .card h1 {

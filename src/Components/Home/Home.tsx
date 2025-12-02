@@ -7,6 +7,7 @@ gsap.registerPlugin(SplitText);
 
 
 function Home() {
+  
   useGSAP(() => {
     const loadAnimation = gsap.timeline({ defaults: { ease: "power1.inout" } });
 
@@ -35,7 +36,7 @@ function Home() {
 
   return (
     <>
-      <section className="home-container">
+      <section id="home" className="home-container">
         <div className="hero">
           <h1 id="top-hometext">AXACRATE</h1>
           <p>Track Inventory, detect unauthorized movement, and monitor warehouse zones instantly using RFID automation</p>

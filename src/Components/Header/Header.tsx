@@ -14,7 +14,9 @@ function Header() {
     <>
       <header>
         <div className={styles["header-left"]}>
+          <a >
           <img className={styles["logo-img"]} src={logo} alt="" width="40px" />
+          </a>
         </div>
 
         <nav>

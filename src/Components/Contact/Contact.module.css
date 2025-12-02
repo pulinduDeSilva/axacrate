@@ -5,22 +5,11 @@
     align-items: center;
     height: 100vh;
     overflow-x: hidden;
-    /*background-image: linear-gradient(to right bottom, #000000, #060506, #0c0a0c, #100f11, #131315, #131416, #141518, #141619, #131518, #121418, #101217, #0f1116);*/
-}
-
-.bg {
-  display: none;
-    position: absolute;
-    height: 100vh;
-    width: auto;
-    filter: blur(10px);
-    opacity: 0.2;
-    z-index: -99;
+    background-color: #000000e1;
+    backdrop-filter: blur(50px);
 }
 
 .contactContainer {
-  background-color: #1f1f1f46;
-  
   color: #f5f5f5;
   padding: 40px;
   width: 80%;
@@ -29,6 +18,7 @@
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
   font-family: Arial, sans-serif;
+
 }
 
 .contactContainer h2 {
@@ -74,7 +64,8 @@
 }
 
 .contactForm button:hover {
-  background-color: #ff4757;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .status {

@@ -41,7 +41,7 @@ const ContactUs: React.FC = () => {
     return (
         <>
             <section id="contact" className= {styles["contact-section"]}>
-                <img className={styles["bg"]} src={featureBg} alt="Contact us BG" />
+                
                 <div className={styles.contactContainer}>
                     <h2>Contact Us</h2>
                     <form onSubmit={handleSubmit} className={styles.contactForm}>

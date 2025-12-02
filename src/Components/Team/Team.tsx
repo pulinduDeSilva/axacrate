@@ -19,7 +19,7 @@ function Features() {
         }
       })
 
-      tl.fromTo("." + styles["wrapper-team"], { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "power1.inout" });
+      tl.fromTo("." + styles["team"], { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "power1.inout" });
     })
 
     mm.add("(max-width: 768px)", () => { //mobile
@@ -32,7 +32,7 @@ function Features() {
         }
       })
 
-      tl.fromTo("." + styles["wrapper-team"], { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "power1.inout" });
+      tl.fromTo("." + styles["team"], { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "power1.inout" });
     })
 
   }, [])

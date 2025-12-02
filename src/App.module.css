@@ -1,7 +1,11 @@
+* {
+    scroll-behavior: smooth;
+
+}
+
 body {
     margin: 0;
     padding: 0;
-
 }
 
 #smooth-wrapper {
@@ -26,7 +30,7 @@ body {
 }
 
 .head-pos {
-  position: absolute;
+  position: fixed;
   z-index: 10;
 }
 
